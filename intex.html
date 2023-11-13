@@ -3,49 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <script src="https://kit.fontawesome.com/fa42e7f957.js" crossorigin="anonymous"></script> -->
-    <link rel="stylesheet" href="css/ iconsfont.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/%20iconsfont.css">
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <i class="fa-duotone fa-house-building" style="--fa-primary-color: #3a88fe; --fa-secondary-color: #0056d6;"></i>
-          <a class="navbar-brand" href="#">Лидер</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Главная</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Ссылка</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Выпадающий список
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Действие</a></li>
-                  <li><a class="dropdown-item" href="#">Другое действие</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Отключенная</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
-              <button class="btn btn-outline-success" type="submit">Поиск</button>
-            </form>
-          </div>
+<div class="container">
+    <div class="row first-section">
+        <div class="left-sector col-6">
+            <h1 class="title">
+                Покупка и продажи<br>
+                квартиры в Выксе
+            </h1>
+            <button class="button-consultation">
+                Консультация
+            </button>
         </div>
-      </nav>
+
+        <div class="right-sector col-6">
+            <img class="col-6" src="img/logo.png" style="width: 600px">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="title-list">Список квартир</h2>
+        </div>
+    </div>
+    <div class="row filter">
+        <div class="col-2">
+            Цена
+            <div class="col-1">
+                <input class="price-ot" type="text">
+            </div>
+            <div class="col-1">
+                <input class="price-do" type="text">
+            </div>
+        </div>
+        <div class="col-2">
+            Цена
+        </div>
+        <div class="col-2">
+            Цена
+        </div>
+        <div class="col-2">
+            Цена
+        </div>
+        <div class="col-2">
+            Цена
+        </div>
+        <div class="col-2">
+            Цена
+        </div>
+    </div>
+</div>
 </body>
 </html>
