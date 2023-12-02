@@ -70,10 +70,11 @@ h1 {
 
 .select-type {
   width: 100%;
+  color: white;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  border: solid 1px;
+  border: solid 2px #030609;
   border-radius: 4px;
   padding: 5px;
   background-color: transparent;
@@ -96,9 +97,22 @@ h1 {
   right: 15px;
   transform: translateY(-50%);
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10.4px 6px 0 6px;
+  border-color: white transparent transparent transparent;
   pointer-events: none;
+}
+
+.select-type:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px black, 0 0 10px #f0c896;
+}
+
+.title-filter {
+  padding: 11px;
+  margin-bottom: -2px;
 }
 
 /*# sourceMappingURL=style.css.map */
