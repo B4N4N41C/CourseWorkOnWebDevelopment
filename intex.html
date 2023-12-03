@@ -32,28 +32,41 @@
     </div>
 
     <div class="row filter">
-        <div class="col-2 eee">
+        <div class="col-2">
             <p>Тип недвижимости</p>
-<!--             <i class="fa-light fa-chevron-down"></i>-->
-<!--            <ul class="submenu">-->
-<!--                <li><a href="">Участок</a></li>-->
-<!--                <li><a href="">Квартира</a></li>-->
-<!--                <li><a href="">Дома</a></li>-->
-<!--            </ul>-->
             <div class="select-wrapper">
                 <select name="type" class="select-type">
-
                     <option value="1">Участок</option>
                     <option value="2">Квартира</option>
                     <option value="3">Дом</option>
                 </select>
             </div>
+            <div class="dropdown">
+                <button class="dropdown__button">Все</button>
+                <ul class="dropdown__list">
+                    <li class="dropdown__list-item" data-value="plot">Участок</li>
+                    <li class="dropdown__list-item" data-value="apartment">Квартира</li>
+                    <li class="dropdown__list-item" data-value="house">Дом</li>
+                    <li class="dropdown__list-item" data-value="dormitory">Общежитие</li>
+                </ul>
+                <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+            </div>
+            <div class="dropdown">
+                <button class="dropdown__button">Все</button>
+                <ul class="dropdown__list">
+                    <li class="dropdown__list-item" data-value="plot">Участок</li>
+                    <li class="dropdown__list-item" data-value="apartment">Квартира</li>
+                    <li class="dropdown__list-item" data-value="house">Дом</li>
+                    <li class="dropdown__list-item" data-value="dormitory">Общежитие</li>
+                </ul>
+                <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+            </div>
+
         </div>
         <div class="col-2">
             <p>Количество комнат</p>
             <div class="select-wrapper">
                 <select name="type" class="select-type">
-
                     <option value="1">Участок</option>
                     <option value="2">Квартира</option>
                     <option value="3">Дом</option>
@@ -71,7 +84,7 @@
             </div>
         </div>
         <div class="col-2">
-             <p class="title-filter">Этаж</p><br>
+            <p class="title-filter">Этаж</p><br>
             <div class="select-wrapper">
                 <select name="type" class="select-type">
 
@@ -84,9 +97,8 @@
         <div class="col-2">
             <p class="title-filter">Ремонт</p>
             <br>
-            <div class="select-wrapper" >
+            <div class="select-wrapper">
                 <select name="type" class="select-type">
-
                     <option value="1">Участок</option>
                     <option value="2">Квартира</option>
                     <option value="3">Дом</option>
@@ -105,6 +117,7 @@
                 </select>
             </div>
         </div>
+
     </div>
 </div>
 <div class="container">
@@ -112,5 +125,6 @@
 
     </div>
 </div>
+<script src="js/selector.js"></script>
 </body>
 </html>
