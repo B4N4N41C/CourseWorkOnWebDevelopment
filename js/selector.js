@@ -13,7 +13,6 @@ document.querySelectorAll('.dropdown').forEach(function (dropDawnWrapper){
     const dropDownBtn = dropDawnWrapper.querySelector('.dropdown__button');
     const dropDownListItems = dropDownList.querySelectorAll('.dropdown__list-item');
     const dropDownInput = dropDawnWrapper.querySelector('.dropdown__input-hidden');
-
     dropDownBtn.addEventListener('click', function (){
         dropDownList.classList.toggle('dropdown__list--visible');
         this.classList.add('dropdown__button--active')
