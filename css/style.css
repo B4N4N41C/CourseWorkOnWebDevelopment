@@ -1,5 +1,6 @@
 body {
   background-color: #26385e;
+  color: black;
   margin: 0;
 }
 
@@ -49,6 +50,7 @@ h1 {
   text-align: center;
   font-size: 1.2em;
   font-weight: bold;
+  margin-bottom: 30px;
 }
 
 .select-type {
@@ -187,11 +189,27 @@ h1 {
 
 .img-house {
   width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
 .announcement {
+  background-color: #152138;
+  position: relative;
   border: solid 3px #152138;
   border-radius: 6px;
+  color: white;
+  margin-bottom: 10px;
+  font-family: "Times New Roman", Montserrat;
+}
+.announcement__text {
+  text-align: justify;
+  padding: 0 0 0 5px;
+  margin: 0;
+}
+
+.label {
+  color: #f0c896;
 }
 
 /*# sourceMappingURL=style.css.map */
