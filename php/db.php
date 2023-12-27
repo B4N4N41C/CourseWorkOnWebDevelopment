@@ -107,7 +107,7 @@ function update($table, $id, $params){
     }
     //UPDATE `users` SET admin = 0 WHERE id = 2
 
-    $sql = "UPDATE $table SET $str WHERE id = $id";
+    $sql = "UPDATE $table SET $str WHERE Id = $id";
     $query = $pdo->prepare($sql);
     $query->execute();
     dbCheckError($query);
@@ -116,7 +116,7 @@ function update($table, $id, $params){
 //Удаление строки в таблице
 function delete($table, $id){
     global $pdo;
-    $sql = "DELETE FROM $table WHERE id = $id";
+    $sql = "DELETE FROM $table WHERE Id = $id";
     $query = $pdo->prepare($sql);
     $query->execute();
     dbCheckError($query);
